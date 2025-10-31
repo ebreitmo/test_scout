@@ -10,3 +10,4 @@ Requires python code files in the main directory for tests to run on. The files
 - action.yml
 
 are 'not enough'. But the action will run and report back that no python files were found (action run 2025-10-31).
+There are also no ```test_*.py``` files.
