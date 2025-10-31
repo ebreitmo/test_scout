@@ -12,5 +12,5 @@ jobs:
       - name: Run test-scout
         uses: ebreitmo/test_scout@main
         with:
-          pattern: 'test_*.py'
+          pattern: 'testmenow_*.py'
           strict_mode: 'false'
