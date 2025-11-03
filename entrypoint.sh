@@ -11,7 +11,7 @@ set -e
 
 echo "🧭 test-scout is running..."
 # --- CONFIG ---
-DEFAULT_PATTERN="test_*.py"
+DEFAULT_PATTERN="testfrombash_*.py"
 PATTERN="${PATTERN-$DEFAULT_PATTERN}"
 STRICT_MODE="${STRICT_MODE:-false}"
 
