@@ -12,7 +12,7 @@ set -e
 echo "🧭 test-scout is running..."
 # --- CONFIG ---
 DEFAULT_PATTERN="testfrombash_*.py"
-PATTERN="${PATTERN-$DEFAULT_PATTERN}"
+PATTERN="${INPUT_PATTERN-$DEFAULT_PATTERN}"
 STRICT_MODE="${STRICT_MODE:-false}"
 
 # --- GITHUB CONTEXT ---
