@@ -6,16 +6,12 @@ jobs:
   check-tests:
     runs-on: ubuntu-latest
     steps:
-      #- name: Checkout repository
-      #  uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      #- name: Run test-scout
-      #  uses: ebreitmo/test_scout@main
-      #  with:
-      #    pattern: 'testmenow_*.py'
-      #    strict_mode: 'false'
-      - name: Checkout my test-scout repo
-        uses: actions/checkout@v5
+      - name: Run test-scout
+        uses: ebreitmo/test_scout@main
         with:
-          repository: ebreitmo/test_scout
-          path: main
+          pattern: 'menow_*.py'
+          strict_mode: 'false'
+      
