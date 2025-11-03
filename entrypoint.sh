@@ -11,7 +11,8 @@ set -e
 
 echo "🧭 test-scout is running..."
 # --- CONFIG ---
-DEFAULT_PATTERN="testfrombash_*.py"
+DEFAULT_PATTERN="test_*.py"
+# PATTERN from action.yml/workflow is accessed as environment variable INPUT_PATTERN when the action runs!
 PATTERN="${INPUT_PATTERN-$DEFAULT_PATTERN}"
 STRICT_MODE="${STRICT_MODE:-false}"
 
